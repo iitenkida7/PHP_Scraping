@@ -120,7 +120,11 @@ class Scraping{
 			$res = trim(strip_tags($res));
 		}
 
-		return $res;
+                if(empty($res)){
+                        return false;
+                }else{
+                        return $res;
+                }
 	}
 
 
